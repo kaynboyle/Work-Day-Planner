@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
@@ -35,18 +35,81 @@
       <!-- whats the deal with the script.js?? we didn't get a script file i don't think, do we make one? -->
       <!-- once the div is made for each work day hour ... is there like a div x 8 or something or you just put it in-->
     <!--  -->
-      <div>9 am</div>
-      <div>10 am</div>
-      <div>11 am</div>
-      <div>12 pm</div>
-      <div>1 pm</div>
-      <div>2 pm</div>
-      <div>3 pm</div>
-      <div>4 pm</div>
-      <div>5 pm</div>
+      <div class="timeblocks">
+        <div class="row" id="row9">
+          <div class="hour" id="9"> 9 am   </div>   
+          <input type="text" name="task-name" placeholder="Enter Task Name" /> 
+          <button id = "save-task" class="saveBtn">Save</button>
+        </div>
+        <div class="row">
+          <div class="hour" id="10"> 10 am </div>   
+          <input class="description"> 
+          <button class="saveBtn">Save</button>
+        </div>
+        <div class="row">
+          <div class="hour" id="11"> 11 am </div>   
+          <input class="description"> 
+          <button class="saveBtn">Save</button>
+        </div>
+        <div class="row">
+          <div class="hour" id="12"> 12 am </div>   
+          <input class="description"> 
+          <button class="saveBtn">Save</button>
+        </div>
+        <div class="row">
+          <div class="hour" id="1"> 1 pm   </div>   
+          <input class="description"> 
+          <button class="saveBtn">Save</button>
+        </div>
+        <div class="row">
+          <div class="hour" id="2"> 2 pm   </div>   
+          <input class="description"> 
+          <button class="saveBtn">Save</button>
+        </div>
+        <div class="row">
+          <div class="hour" id="3"> 3 pm   </div>   
+          <input class="description"> 
+          <button class="saveBtn">Save</button>
+        </div>
+        <div class="row">
+          <div class="hour" id="4"> 4 pm   </div>   
+          <input class="description"> 
+          <button class="saveBtn">Save</button>
+        </div>
+        <div class="row">
+          <div class="hour" id="5"> 5 pm   </div>   
+          <input class="description"> 
+          <button class="saveBtn">Save</button>
+        </div>
+        <!-- <div class="hour" id="10"> 10 am </div>
+        <div class="hour" id="11"> 11 am </div>
+        <div class="hour"> 12 pm </div>
+        <div class="hour"> 1 pm </div>
+        <div class="hour"> 2 pm </div>
+        <div class="hour"> 3 pm </div>
+        <div class="hour"> 4 pm </div>
+        <div class="hour"> 5pm </div> -->
+      </div>
+        <!-- <p>9 am</p>
+        <p>10 am</p>
+        <p>11 am</p>
+        <p>12 pm</p>
+        <p>1 pm</p>
+        <p>2 pm</p>
+        <p>3 pm</p>
+        <p>4 pm</p>
+        <p>5 pm</p> -->
+      </div>
     </div>
 
+    <!-- <script src=.assets.scripts.script.js></script> -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <!-- script uses time goes before -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="assets/scripts/script.js"></script>
+    <!-- <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.8.17/jquery-ui.min.js"></script> -->
   </body>
 </html>
