@@ -47,85 +47,93 @@ var temporary = document.getElementById('currentDay');
 temporary.textContent = `${daytime}`;
 
 console.log(typeof onlyTime)
-
-var rowNine = document.getElementById('row9');
-var ele9 = document.getElementById('9');
-var ele10 = document.getElementById('10');
-var ele11 = document.getElementById('11');
-var ele12 = document.getElementById('12');
-var ele13 = document.getElementById('1');
-var ele14 = document.getElementById('2');
-var ele15 = document.getElementById('3');
-var ele16 = document.getElementById('4');
-var ele17 = document.getElementById('5');
-
-
 var timeCut = onlyTime.split(":");
-if (timeCut[0] === "09"){;
-    ele9.classList.remove("hour");
-    ele9.className += "present";
-    ele10.classList.remove("hour");
-    ele10.className += "future";
-    ele11.classList.remove("hour");
-    ele11.className += "future";
-    ele12.classList.remove("hour");
-    ele12.className += "future";
-    ele13.classList.remove("hour");
-    ele13.className += "future";
-    ele14.classList.remove("hour");
-    ele14.className += "future";
-    ele15.classList.remove("hour");
-    ele15.className += "future";
-    ele16.classList.remove("hour");
-    ele16.className += "future";
-    ele17.classList.remove("hour");
-    ele17.className += "future";
-    
+var blockTimes = 
+function blockColorChange(){
+  if (data-id == timeCut){
+
+  }
 }
-if (timeCut[0] === "10"){
-    console.log("lesgo");
-    ele9.classList.remove("hour");
-    ele9.className += "past";
-    ele10.classList.remove("hour");
-    ele10.className += "present";
-    ele11.classList.remove("hour");
-    ele11.className += "future";
-    ele12.classList.remove("hour");
-    ele12.className += "future";
-    ele13.classList.remove("hour");
-    ele13.className += "future";
-    ele14.classList.remove("hour");
-    ele14.className += "future";
-    ele15.classList.remove("hour");
-    ele15.className += "future";
-    ele16.classList.remove("hour");
-    ele16.className += "future";
-    ele17.classList.remove("hour");
-    ele17.className += "future";
+ 
+
+// var rowNine = document.getElementById('row9');
+// var ele9 = document.getElementById('9');
+// var ele10 = document.getElementById('10');
+// var ele11 = document.getElementById('11');
+// var ele12 = document.getElementById('12');
+// var ele13 = document.getElementById('1');
+// var ele14 = document.getElementById('2');
+// var ele15 = document.getElementById('3');
+// var ele16 = document.getElementById('4');
+// var ele17 = document.getElementById('5');
+
+
+// var timeCut = onlyTime.split(":");
+// if (timeCut[0] === "09"){;
+//     ele9.classList.remove("hour");
+//     ele9.className += "present";
+//     ele10.classList.remove("hour");
+//     ele10.className += "future";
+//     ele11.classList.remove("hour");
+//     ele11.className += "future";
+//     ele12.classList.remove("hour");
+//     ele12.className += "future";
+//     ele13.classList.remove("hour");
+//     ele13.className += "future";
+//     ele14.classList.remove("hour");
+//     ele14.className += "future";
+//     ele15.classList.remove("hour");
+//     ele15.className += "future";
+//     ele16.classList.remove("hour");
+//     ele16.className += "future";
+//     ele17.classList.remove("hour");
+//     ele17.className += "future";
     
-}
-if (timeCut[0] === "11"){
-    console.log("lesgo");
-    ele9.classList.remove("hour");
-    ele9.className += "past";
-    ele10.classList.remove("hour");
-    ele10.className += "past";
-    ele11.classList.remove("hour");
-    ele11.className += "present";
-    ele12.classList.remove("hour");
-    ele12.className += "future";
-    ele13.classList.remove("hour");
-    ele13.className += "future";
-    ele14.classList.remove("hour");
-    ele14.className += "future";
-    ele15.classList.remove("hour");
-    ele15.className += "future";
-    ele16.classList.remove("hour");
-    ele16.className += "future";
-    ele17.classList.remove("hour");
-    ele17.className += "future";
+// }
+// if (timeCut[0] === "10"){
+//     console.log("lesgo");
+//     ele9.classList.remove("hour");
+//     ele9.className += "past";
+//     ele10.classList.remove("hour");
+//     ele10.className += "present";
+//     ele11.classList.remove("hour");
+//     ele11.className += "future";
+//     ele12.classList.remove("hour");
+//     ele12.className += "future";
+//     ele13.classList.remove("hour");
+//     ele13.className += "future";
+//     ele14.classList.remove("hour");
+//     ele14.className += "future";
+//     ele15.classList.remove("hour");
+//     ele15.className += "future";
+//     ele16.classList.remove("hour");
+//     ele16.className += "future";
+//     ele17.classList.remove("hour");
+//     ele17.className += "future";
     
-}
+// }
+// if (timeCut[0] === "11"){
+//     console.log("lesgo");
+//     ele9.classList.remove("hour");
+//     ele9.className += "past";
+//     ele10.classList.remove("hour");
+//     ele10.className += "past";
+//     ele11.classList.remove("hour");
+//     ele11.className += "present";
+//     ele12.classList.remove("hour");
+//     ele12.className += "future";
+//     ele13.classList.remove("hour");
+//     ele13.className += "future";
+//     ele14.classList.remove("hour");
+//     ele14.className += "future";
+//     ele15.classList.remove("hour");
+//     ele15.className += "future";
+//     ele16.classList.remove("hour");
+//     ele16.className += "future";
+//     ele17.classList.remove("hour");
+//     ele17.className += "future";
+    
+// }
 //if (onlyTime[0] === '9'){
 //     console.log('fookyea');
 // }
