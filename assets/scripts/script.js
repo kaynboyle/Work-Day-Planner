@@ -36,26 +36,23 @@ var onlyTime = moment().format("HH:mm");
 var textAreas = $(".description");
 var saveBtn= $(".saveBtn")
 //run the function on each instance of text area
-function localSave(){
-  var textArea = document.getElementsByTagName('textarea').value;
-  localStorage.setItem(button[i], textArea) ;
-};
 
-// // saveBtn.on("click", localSave());
-// // set(){}
-// for (let i=0; i < (textAreas.length); i++){
-//   saveBtn.on("click", localSave())
+$(".time-block").each(function(){
+  var ID = $(this).attr("data-id");
+  var getStorage = localStorage.getItem(ID);
+  $(this).children(".description").val(getStorage);
+
+});
 
 
-// };
-const buttons = document.getElementsByTagName('button');
+$(".saveBtn").on("click", function(){
+  var hourID = $(this).parent().attr("data-id");
+  console.log(hourID);
+  var textValue = $(this).siblings(".description").val();
+  console.log(textValue);
+  localStorage.setItem(hourID, textValue);
+});
 
-for (let i = 0; i < buttons.length; i++) {
-  //i didnt expect it to just go without the click, why is that the case?? on the click it should add the console log not before?
-  buttons[i].addEventListener('click', console.log("im right here"));
-}
-
-// i could always just do onclick the id for this specific button local storage this specific text area - is there an easier way?
 
 var temporary = document.getElementById('currentDay');
 
