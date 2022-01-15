@@ -37,16 +37,23 @@ var textAreas = $(".description");
 var saveBtn= $(".saveBtn")
 //run the function on each instance of text area
 function localSave(){
-  var here = "here"
-  console.log(here)
+  var textArea = document.getElementsByTagName('textarea').value;
+  localStorage.setItem(button[i], textArea) ;
 };
 
-// saveBtn.on("click", localSave());
-// set(){}
-for (let i=0; i < (textAreas.length); i++){
-  saveBtn.on("click", localSave())
+// // saveBtn.on("click", localSave());
+// // set(){}
+// for (let i=0; i < (textAreas.length); i++){
+//   saveBtn.on("click", localSave())
 
-};
+
+// };
+const buttons = document.getElementsByTagName('button');
+
+for (let i = 0; i < buttons.length; i++) {
+  //i didnt expect it to just go without the click, why is that the case?? on the click it should add the console log not before?
+  buttons[i].addEventListener('click', console.log("im right here"));
+}
 
 // i could always just do onclick the id for this specific button local storage this specific text area - is there an easier way?
 
